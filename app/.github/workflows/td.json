@@ -1,9 +1,9 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:***:task-definition/app",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:027260563052:task-definition/app",
   "containerDefinitions": [
     {
       "name": "app",
-      "image": "***.dkr.ecr.us-east-2.amazonaws.com/app_repo",
+      "image": "332769750459.dkr.ecr.us-east-1.amazonaws.com/app_repo",
       "cpu": 256,
       "memory": 512,
       "portMappings": [
@@ -20,8 +20,8 @@
     }
   ],
   "family": "app",
-  "taskRoleArn": "arn:aws:iam::***:role/ecsTaskExecutionRole",
-  "executionRoleArn": "arn:aws:iam::***:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::027260563052:role/ecsExecutionRole",
+  "executionRoleArn": "arn:aws:iam::027260563052:role/ecsExecutionRole",
   "networkMode": "awsvpc",
   "volumes": [],
   "status": "ACTIVE",
@@ -52,5 +52,7 @@
   ],
   "cpu": "256",
   "memory": "512",
-  "registeredBy": "arn:aws:iam::***:user/antonio"
+  "registeredAt": "2023-11-04T19:31:05.268Z",
+  "registeredBy": "arn:aws:iam::027260563052:user/techchallenge",
+  "tags": []
 }
